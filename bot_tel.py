@@ -48,7 +48,7 @@ async def echo_send(message : types.Message):
 		day_week = calendar.day_name[my_date.weekday()]
 		date_now = 'sheet '+str(now.month)+'-'+str(now.day)
 
-		if day_week == 'Wednesday':
+		if day_week == 'Monday':
 			wz = load_workbook(filename = 'work.xlsx')
 			if date_now in wz.sheetnames:
 				pass
